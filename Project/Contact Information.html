@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+    /* Form Styles */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.form {
+  border-radius: 5px;
+  background-color: dimgrey;
+  padding: 20px;
+}
+
+    </style>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Resume, Andrew Connelly,IIT Degree, USC Grad" />
+    <title>Andrew Connelly's Contact Information</title>
+    <link href="css_layout.css" rel="stylesheet" />
+</head>
+
+    <body>
+        <header>
+            Contact Information
+        </header>
+        <nav style="position: relative">
+            <ul class="nav">
+                <li class="nav"><a href="Index.html">Home Page</a></li>
+                <li class="nav"><a href="About_Me.html">About Me</a></li>
+                <li class="nav"><a href="">Job History</a></li>
+                <li class="nav"><a href="Portfolio.html">Portfolio</a></li>
+                <li class="nav"><a href="Contact%20Information.html">Contact Information</a></li>
+            </ul>
+        </nav>
+        <div class="table">
+        <table>
+            <tr>
+            <th>Contatct Information</th>
+            <th>Primary</th>
+            <th>Secondary</th>
+            </tr>
+            <tr>
+                <td>Full Name</td>
+                <td>Andrew Ronald Connelly</td>
+                
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td>(843)583-5408</td>
+                
+            </tr>
+            <tr>
+                <td>Mailing Address</td>
+                <td>1051 Southern DR. APT 1305,Columbia, SC, 29201  </td>
+                <td>106 Pecan RD, Walterboro, SC, 29488</td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td>connela@email.sc.edu</td>
+                <td>davethenord@gmail.com</td>
+            </tr>
+        </table>
+        </div>
+        <div class="form">
+        <form id="contact" action="https://formspree.io/connela@email.sc.edu" method="post" >
+            <label for="compName">Company Name</label>
+            <input type="text" id="compName" name="compName" placeholder="Company Name" required>
+            
+            <label for="State">State</label>
+            <select id="State" name="State" required>
+                <option value="South Carolina">South Carolina</option>
+                <option value="North Carolina">North Carolina</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Florida">Florida</option>
+            </select>
+            
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+            
+            <label for="attachment" ></label>
+            <input type="file" id="attachment" name="attachment" accept="application/pdf, application/msword" >
+            
+            <input type="submit" value="Submit">
+            
+        </form>
+        </div>
+        <footer>
+            <p>Made by Andrew Connelly</p>
+        </footer>
+    </body>
+</html>        
