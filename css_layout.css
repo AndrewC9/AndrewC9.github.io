@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+
+/* HTML and Body Styles */
+html{
+    background-color: dimgrey;
+    color: white;
+}
+header{
+    font-size: 2.3em;
+}
+
+/* Heading Style */
+
+
+/* List Styles */
+
+
+/* Footer Styles */
+footer{
+    clear: both;
+}
+
+/*Class Styles */
+
+
+
+/*ID Styles*/
+
+.nav{    
+   list-style: none;
+    display: inline;
+    margin: 20px;
+    padding: 0;
+}
+
+.table{
+    padding-top: 15px;
+}
